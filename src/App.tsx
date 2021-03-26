@@ -1,29 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Suspense } from 'react';
 import './App.scss';
+import i18n from 'i18next';
+import { initReactI18next, useTranslation } from 'react-i18next';
+
+const translationsEn = { welcome: 'Welcome' };
+const translationsEs = { welcome: 'Bienvenido' };
+
+i18n
+  .use(initReactI18next)
+  .init({
+    resources: {
+      en: { translation: translationsEn },
+      es: { translation: translationsEs },
+    },
+    lng: 'en',
+    fallbackLng: 'es',
+    interpolation: { escapeValue: false },
+  });
+
+const onChangeLanguage = (event: React.FormEvent<HTMLSelectElement>): void => {
+  i18n.changeLanguage(event.currentTarget.value);
+}
 
 function App() {
-  const test = 'test';
-  debugger;
-  console.log(test);
+  const { t } = useTranslation();
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense fallback="Loading...">
+      <div className="App">
+        <header className="App-header">
+          <select name="language" onChange={onChangeLanguage}>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+          </select>
+          <span>{t('welcome')}</span>
+        </header>
+      </div>
+    </Suspense>
   );
 }
 

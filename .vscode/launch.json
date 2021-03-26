@@ -13,8 +13,7 @@
       "sourceMapPathOverrides": {
         "webpack:///src/*": "${webRoot}/*"
       }
-    },
-    {
+    }, {
       "name": "Tests",
       "type": "node",
       "request": "launch",
