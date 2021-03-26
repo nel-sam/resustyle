@@ -2,9 +2,11 @@ import React, { Suspense } from 'react';
 import './App.scss';
 import i18n from 'i18next';
 import { initReactI18next, useTranslation } from 'react-i18next';
-
-const translationsEn = { welcome: 'Welcome' };
-const translationsEs = { welcome: 'Bienvenido' };
+import { ComboBox, IComboBox, IComboBoxOption } from '@fluentui/react';
+import { translationsEn } from './translations/en';
+import { translationsEs } from './translations/es';
+import { translationsFr } from './translations/fr';
+import { translationsJp } from './translations/jp';
 
 i18n
   .use(initReactI18next)
@@ -12,27 +14,42 @@ i18n
     resources: {
       en: { translation: translationsEn },
       es: { translation: translationsEs },
+      fr: { translation: translationsFr },
+      jp: { translation: translationsJp },
     },
-    lng: 'en',
-    fallbackLng: 'es',
+    lng: translationsEn.key,
+    fallbackLng: translationsEs.key,
     interpolation: { escapeValue: false },
   });
 
-const onChangeLanguage = (event: React.FormEvent<HTMLSelectElement>): void => {
-  i18n.changeLanguage(event.currentTarget.value);
+const changeLanguage = (event: React.FormEvent<IComboBox>, option?: IComboBoxOption): void => {
+  i18n.changeLanguage(option?.key.toString());
 }
 
 function App() {
   const { t } = useTranslation();
 
+  const comboBoxRef = React.useRef<IComboBox>(null);
+  const comboBoxOptions: IComboBoxOption[] = [
+    { key: translationsEn.key, text: translationsEn.langName },
+    { key: translationsEs.key, text: translationsEs.langName },
+    { key: translationsFr.key, text: translationsFr.langName },
+    { key: translationsJp.key, text: translationsJp.langName },
+  ];
+
   return (
     <Suspense fallback="Loading...">
       <div className="App">
         <header className="App-header">
-          <select name="language" onChange={onChangeLanguage}>
-            <option value="en">English</option>
-            <option value="es">Español</option>
-          </select>
+          <ComboBox
+            componentRef={comboBoxRef}
+            defaultSelectedKey="en"
+            label="Language"
+            allowFreeform
+            autoComplete="on"
+            onChange={changeLanguage}
+            options={comboBoxOptions}
+          />
           <span>{t('welcome')}</span>
         </header>
       </div>
