@@ -1,5 +1,6 @@
 export const translationsEs = {
   key: 'es',
   langName: 'Español',
-  welcome: 'Bienvenido'
+  welcome: 'Resustyle',
+  enterJson: 'Ingrese CV en formato JSON'
 };

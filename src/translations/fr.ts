@@ -1,5 +1,6 @@
 export const translationsFr = {
   key: 'fr',
   langName: 'Français',
-  welcome: 'Bienvenu'
+  welcome: 'Resustyle',
+  enterJson: 'Enter resume JSON',
 };
