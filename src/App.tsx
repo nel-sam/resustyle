@@ -25,7 +25,9 @@ i18n
     interpolation: { escapeValue: false },
   });
 
-const changeLanguage = (event: React.FormEvent<IComboBox>, option?: IComboBoxOption): void => {
+const changeLanguage = (
+  event: React.FormEvent<IComboBox>,
+  option?: IComboBoxOption): void => {
   i18n.changeLanguage(option?.key.toString());
 }
 
