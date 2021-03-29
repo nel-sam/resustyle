@@ -29,9 +29,9 @@ const changeLanguage = (
   event: React.FormEvent<IComboBox>,
   option?: IComboBoxOption): void => {
   i18n.changeLanguage(option?.key.toString());
-}
+};
 
-function App() {
+const App: React.FC = ()  => {
   const { t } = useTranslation();
   initializeIcons();
 
@@ -65,6 +65,6 @@ function App() {
       </div>
     </Suspense>
   );
-}
+};
 
 export default App;
