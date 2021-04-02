@@ -1,3 +1,5 @@
+import { ValidationErrorTypes } from "../enums";
+
 export interface Location {
   address: string;
   postalCode: string;
@@ -101,4 +103,15 @@ export interface Resume {
   languages: Language[];
   interests: Interest[];
   references: Reference[];
+}
+
+export interface ResumeValidationResult {
+  isValid: boolean;
+  errorDetails: string;
+  errorType: ValidationErrorTypes;
+}
+
+export interface ParseResult {
+  resume: Resume;
+  validationResult: ResumeValidationResult;
 }

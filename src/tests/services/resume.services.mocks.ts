@@ -53,7 +53,7 @@ export const validJsonResume = `{
     "endDate": "2019-06-01",
     "gpa": "3.6",
     "courses": [
-      "test course 1"
+      "これ는 dois être válido"
     ]
   }],
   "awards": [{
