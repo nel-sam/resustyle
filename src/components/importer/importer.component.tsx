@@ -1,5 +1,5 @@
 import { TextField } from '@fluentui/react';
-import React, { FormEvent } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 const Importer: React.FC = () => {

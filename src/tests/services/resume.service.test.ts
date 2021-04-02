@@ -27,7 +27,7 @@ describe('Resume Service tests', () => {
     expect(result.validationResult.errorDetails).toBe('wtf');
   });
 
-  fit('Errors when required prop missing in invalid JSON', () => {
+  it('Errors when required prop missing in invalid JSON', () => {
     const input = '{ "address": "1234 W 2nd St", "basics": {} }';
     const result: ParseResult = resumeService.parseResume(input);
     expect(result.validationResult.isValid).toBe(false);

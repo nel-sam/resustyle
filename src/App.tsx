@@ -3,13 +3,14 @@ import './App.scss';
 import i18n from 'i18next';
 import { initReactI18next, useTranslation } from 'react-i18next';
 import { ComboBox, IComboBox, IComboBoxOption, initializeIcons } from '@fluentui/react';
-import { translationsEn } from './translations/en';
-import { translationsEs } from './translations/es';
-import { translationsFr } from './translations/fr';
-import { translationsJp } from './translations/jp';
 import MainContainer from './components/main-container/main-container.component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLanguage } from '@fortawesome/free-solid-svg-icons';
+
+import translationsEn from './translations/en.json';
+import translationsEs from './translations/es.json';
+import translationsFr from './translations/fr.json';
+import translationsJp from './translations/jp.json';
 
 i18n
   .use(initReactI18next)
@@ -31,7 +32,7 @@ const changeLanguage = (
   i18n.changeLanguage(option?.key.toString());
 };
 
-const App: React.FC = ()  => {
+const App: React.FC = () => {
   const { t } = useTranslation();
   initializeIcons();
 
