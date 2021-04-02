@@ -7,7 +7,7 @@ jest.mock('react-i18next', () => ({
 }));
 
 describe('Importer component tests', () => {
-  fit('Should instantiate', () => {
+  it('Should instantiate', () => {
     const renderResult = render(<Importer />);
     expect(renderResult).toBeDefined();
   });
