@@ -18,7 +18,7 @@ export default class ResumeService {
     return properties.sort();
   }
 
-  public validateResume(toValidate: Resume): ResumeValidationResult {
+  private validateResume(toValidate: Resume): ResumeValidationResult {
     // Move this into state so we only have to do it once
     const resumeProps = this.getObjectProperties(validResumeObj);
     const parsedResumeProps = this.getObjectProperties(toValidate);

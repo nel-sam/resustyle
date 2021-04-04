@@ -1,6 +1,6 @@
-import { ValidationErrorTypes } from "../enums";
+import { ValidationErrorTypes } from '../enums';
 
-export interface Location {
+export type Location = {
   address: string;
   postalCode: string;
   city: string;
@@ -8,13 +8,13 @@ export interface Location {
   region: string;
 }
 
-export interface Profile {
+export type Profile = {
   network: string;
   username: string;
   url: string;
 }
 
-export interface Basics {
+export type Basics = {
   name: string;
   label: string;
   picture: string;
@@ -26,7 +26,7 @@ export interface Basics {
   profiles: Profile[];
 }
 
-export interface Work {
+export type Work = {
   company: string;
   position: string;
   website: string;
@@ -36,7 +36,7 @@ export interface Work {
   highlights: string[];
 }
 
-export interface Volunteer {
+export type Volunteer = {
   organization: string;
   position: string;
   website: string;
@@ -46,7 +46,7 @@ export interface Volunteer {
   highlights: string[];
 }
 
-export interface Education {
+export type Education = {
   institution: string;
   area: string;
   studyType: string;
@@ -56,14 +56,14 @@ export interface Education {
   courses: string[];
 }
 
-export interface Award {
+export type Award = {
   title: string;
   date: string;
   awarder: string;
   summary: string;
 }
 
-export interface Publication {
+export type Publication = {
   name: string;
   publisher: string;
   releaseDate: string;
@@ -71,28 +71,28 @@ export interface Publication {
   summary: string;
 }
 
-export interface Skill {
+export type Skill = {
   name: string;
   level: string;
   keywords: string[];
 }
 
-export interface Language {
+export type Language = {
   language: string;
   fluency: string;
 }
 
-export interface Interest {
+export type Interest = {
   name: string;
   keywords: string[];
 }
 
-export interface Reference {
+export type Reference = {
   name: string;
   reference: string;
 }
 
-export interface Resume {
+export type Resume = {
   basics: Basics;
   work: Work[];
   volunteer: Volunteer[];
@@ -105,13 +105,13 @@ export interface Resume {
   references: Reference[];
 }
 
-export interface ResumeValidationResult {
+export type ResumeValidationResult = {
   isValid: boolean;
   errorDetails: string;
   errorType: ValidationErrorTypes;
 }
 
-export interface ParseResult {
+export type ParseResult = {
   resume: Resume;
   validationResult: ResumeValidationResult;
 }
