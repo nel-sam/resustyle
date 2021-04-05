@@ -33,7 +33,21 @@ export const validJsonResume = `{
       "Maintained and created new UI experiences on our React client app (Learning module in the Paylocity suite).",
       "Created documentation that describes the architecture for a new system that uses the entire stack consisting of React for the web client, Angular Ionic for the Mobile client, a C#/.Net API, SQL Server, RabbitMQ, and AWS storage."
     ]
-  }],
+  },
+  {
+      "company": "DriveTime",
+      "position": "Software Developer",
+      "website": "https://www.drivetime.com/",
+      "startDate": "2020-02-01",
+      "endDate": "2021-03-30",
+      "summary": "C#, React, Angular 7 & 8, Ionic (mobile), Elk/Kibana for logging, TeamCity, Octopus for releases, TypeScript/Javascript, SASS/CSS, BitBucket with Git, Visual Studio 2019, VS Code, SQL server, Azure, Amazon Web Services (AWS), and Jira. Developer on the Learning Management System team, where I work on a system that enables people to take search, preview, register for, and take online courses.",
+      "highlights": [
+        "Implement new work processors for breaking up and running tasks in parallel using RabbitMQ to distribute work",
+        "Implemented new components in the Angular+Ionic Mobile app such as a course catalog, search and filtering based on multiple user inputs, and user experience and user interface improvements.",
+        "Maintained and created new UI experiences on our React client app (Learning module in the Paylocity suite).",
+        "Created documentation that describes the architecture for a new system that uses the entire stack consisting of React for the web client, Angular Ionic for the Mobile client, a C#/.Net API, SQL Server, RabbitMQ, and AWS storage."
+      ]
+    }],
   "volunteer": [{
     "organization": "Organization",
     "position": "Volunteer",

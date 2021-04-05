@@ -1,0 +1,36 @@
+.modern-corp-main {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+
+  .left {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+
+    .circle-image {
+      margin: 1rem;
+    }
+
+    .name {
+      margin: 1.3rem;
+      padding-bottom: 1.3rem;
+      border-bottom: 1px solid white;
+
+      span {
+        font-size: 2.3rem;
+      }
+    }
+
+    .summary {
+      font-style: italic;
+      text-align: start;
+      font-size: 0.9rem;
+      margin: 1rem;
+    }
+  }
+
+  .right {
+    background-color: grey;
+    min-height: 10rem;
+  }
+}
