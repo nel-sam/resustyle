@@ -2,5 +2,6 @@
   "key": "en",
   "langName": "English",
   "welcome": "Resustyle",
-  "enterJson": "Enter resume JSON"
+  "enterJson": "Enter resume JSON",
+  "experience": "Experience"
 }

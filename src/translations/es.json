@@ -2,5 +2,6 @@
   "key": "es",
   "langName": "Español",
   "welcome": "Resustyle",
-  "enterJson": "Ingrese CV en formato JSON"
+  "enterJson": "Ingrese su CV en formato JSON",
+  "experience": "Trabajos"
 }

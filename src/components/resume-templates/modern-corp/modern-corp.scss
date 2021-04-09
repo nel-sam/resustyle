@@ -1,6 +1,8 @@
 .modern-corp-main {
+  min-width: 60rem;
+  max-width: 60rem;
   display: grid;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: 25% 75%;
 
   .left {
     background-color: black;
@@ -30,7 +32,12 @@
   }
 
   .right {
-    background-color: grey;
     min-height: 10rem;
   }
+}
+
+// TODO: Add media queries for responsiveness
+.preview-mode {
+  transform: scale(0.8);
+  border: 1px dashed grey;
 }

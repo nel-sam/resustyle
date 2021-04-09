@@ -1,7 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Resume } from '../../../models/interfaces';
 import CircleImage from '../shared/circle-image/circle-image.component';
-import ModernCorpWork from './modern-corp-work.component';
+import ModernCorpWork from './work/modern-corp-work.component';
 import './modern-corp.scss';
 
 type ModernCorpProps = {
@@ -9,7 +10,10 @@ type ModernCorpProps = {
 };
 
 const ModernCorp: React.FC<ModernCorpProps> = ({ resume }: ModernCorpProps) => {
-  return (<div className="modern-corp-main">
+  const isPreviewMode = true;
+  const { t } = useTranslation();
+
+  return (<div className={isPreviewMode ? 'modern-corp-main preview-mode' : 'modern-corp-main'}>
     <aside className="left">
       <div className="circle-image">
         <CircleImage url={resume.basics.picture}></CircleImage>
@@ -22,7 +26,7 @@ const ModernCorp: React.FC<ModernCorpProps> = ({ resume }: ModernCorpProps) => {
       </p>
     </aside>
     <article className="right">
-      <ModernCorpWork jobs={resume.work}></ModernCorpWork>
+      <ModernCorpWork headerText={t('experience')} jobs={resume.work}></ModernCorpWork>
     </article>
   </div>);
 };

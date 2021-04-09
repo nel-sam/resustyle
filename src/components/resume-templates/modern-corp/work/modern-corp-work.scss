@@ -1,0 +1,20 @@
+.modern-corp-work {
+  margin: 1rem;
+  text-align: left;
+
+  .header {
+    text-transform: uppercase;
+  }
+
+  .job {
+    margin: 1rem;
+
+    .position {
+      font-weight: bold;
+    }
+
+    .date {
+      color: rgb(152, 63, 93);
+    }
+  }
+}
