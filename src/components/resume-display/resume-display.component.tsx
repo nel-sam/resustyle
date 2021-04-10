@@ -9,11 +9,13 @@ type ResumeDisplayProps = {
 
 const ResumeDisplay: React.FC<ResumeDisplayProps> = ({ resume }: ResumeDisplayProps) => {
   return (
-    <div>
+    <div className="resume-display-main">
       { resume &&
-        <ModernCorp resume={resume}></ModernCorp>
+        (<div className="resume-template">
+          <ModernCorp resume={resume}></ModernCorp>
+        </div>)
       }
-    </div >);
+    </div>);
 };
 
 export default ResumeDisplay;
