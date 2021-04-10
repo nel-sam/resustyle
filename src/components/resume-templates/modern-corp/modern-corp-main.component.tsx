@@ -10,7 +10,6 @@ type ModernCorpProps = {
 };
 
 const ModernCorp: React.FC<ModernCorpProps> = ({ resume }: ModernCorpProps) => {
-  const isPreviewMode = false;
   const { t } = useTranslation();
 
   return (<div className='modern-corp-main'>
