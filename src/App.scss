@@ -43,3 +43,31 @@
     transform: rotate(360deg);
   }
 }
+
+.resume-template {
+  transform: scale(0.6);
+  border: 1px dashed grey;
+}
+
+@page { size: auto;  margin: 0mm; }
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .resume-template {
+    transform: scale(1);
+    border: 0px;
+  }
+
+  .resume-display-main * {
+    visibility: visible;
+  }
+
+  .resume-display-main {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

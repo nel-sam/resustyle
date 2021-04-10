@@ -10,10 +10,10 @@ type ModernCorpProps = {
 };
 
 const ModernCorp: React.FC<ModernCorpProps> = ({ resume }: ModernCorpProps) => {
-  const isPreviewMode = true;
+  const isPreviewMode = false;
   const { t } = useTranslation();
 
-  return (<div className={isPreviewMode ? 'modern-corp-main preview-mode' : 'modern-corp-main'}>
+  return (<div className='modern-corp-main'>
     <aside className="left">
       <div className="circle-image">
         <CircleImage url={resume.basics.picture}></CircleImage>
