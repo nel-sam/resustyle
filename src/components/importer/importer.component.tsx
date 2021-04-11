@@ -3,6 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Resume } from '../../models/interfaces';
 import ResumeService from '../../services/resume.service';
+import SchemaDisplay from '../schema-display/schema-display.component';
 
 interface ImporterProps {
   onResumeSet(resume: Resume): void;
@@ -31,12 +32,15 @@ const Importer: React.FC<ImporterProps> = ({ onResumeSet }: ImporterProps) => {
   };
 
   return (
-    <TextField
-      label={t('enterJson')}
-      multiline rows={20}
-      placeholder="{}"
-      onChange={onJsonEntry}
-    />
+    <div>
+      <SchemaDisplay></SchemaDisplay>
+      <TextField
+        label={t('enterJson')}
+        multiline rows={20}
+        placeholder="{}"
+        onChange={onJsonEntry}
+      />
+    </div>
   );
 };
 

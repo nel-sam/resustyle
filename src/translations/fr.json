@@ -3,5 +3,8 @@
   "langName": "Français",
   "welcome": "Resustyle",
   "enterJson": "Ecrivéz votre résumé en JSON",
-  "experience": "Expérience"
+  "experience": "Expérience",
+  "json-schema": "Le format de JSON de résumé",
+  "view-schema-button": "Voir format de JSON de résumé",
+  "hide-schema-button": "Cacher format de JSON de résumé"
 }
