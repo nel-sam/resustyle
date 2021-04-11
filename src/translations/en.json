@@ -3,5 +3,8 @@
   "langName": "English",
   "welcome": "Resustyle",
   "enterJson": "Enter resume JSON",
-  "experience": "Experience"
+  "experience": "Experience",
+  "json-schema": "Resume JSON Schema",
+  "view-schema-button": "View JSON Schema",
+  "hide-schema-button": "Hide JSON Schema"
 }

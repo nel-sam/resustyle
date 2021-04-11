@@ -8,7 +8,8 @@ jest.mock('react-i18next', () => ({
 
 describe('Importer component tests', () => {
   it('Should instantiate', () => {
-    const renderResult = render(<Importer resume={{}} />);
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
+    const renderResult = render(<Importer onResumeSet={() => { }} />);
     expect(renderResult).toBeDefined();
   });
 });

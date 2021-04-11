@@ -3,5 +3,8 @@
   "langName": "Español",
   "welcome": "Resustyle",
   "enterJson": "Ingrese su CV en formato JSON",
-  "experience": "Trabajos"
+  "experience": "Trabajos",
+  "json-schema": "Formato del JSON del CV",
+  "view-schema-button": "Mostrar formato JSON",
+  "hide-schema-button": "Ocultar formato JSON"
 }
