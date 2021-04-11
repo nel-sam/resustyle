@@ -6,5 +6,7 @@
   "experience": "職歴",
   "json-schema": "履歴書のJSONのフォーマット",
   "view-schema-button": "JSONのフォーマットを見る",
-  "hide-schema-button": "JSONのフォーマットを隠す"
+  "hide-schema-button": "JSONのフォーマットを隠す",
+  "missing-required-property": "必要なプロパティがない",
+  "unexpected-property-found": "意外なプロパティがある"
 }

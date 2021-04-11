@@ -39,11 +39,11 @@ const Importer: React.FC<ImporterProps> = ({ onResumeSet }: ImporterProps) => {
 
   const getValidationErrorMessage = (valRes: ResumeValidationResult): string => {
     if(valRes.errorType === ValidationErrorTypes.MissingRequiredProperty) {
-      return `Missing required property: ${valRes.errorDetails}`;
+      return `${t('missing-required-property')}: ${valRes.errorDetails}`;
     }
     
     if(valRes.errorType === ValidationErrorTypes.UnexpectedPropertyFound) {
-      return `Unexpected property found: ${valRes.errorDetails}`;
+      return `${t('unexpected-property-found')}: ${valRes.errorDetails}`;
     }
     return '';
   };
