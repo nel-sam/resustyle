@@ -3,5 +3,8 @@
   "langName": "日本語",
   "welcome": "Resustyle",
   "enterJson": "履歴書のJSONを入力",
-  "experience": "職歴"
+  "experience": "職歴",
+  "json-schema": "履歴書のJSONのフォーマット",
+  "view-schema-button": "JSONのフォーマットを見る",
+  "hide-schema-button": "JSONのフォーマットを隠す"
 }

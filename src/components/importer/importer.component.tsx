@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { ValidationErrorTypes } from '../../enums';
 import { Resume, ResumeValidationResult } from '../../models/interfaces';
 import ResumeService from '../../services/resume.service';
+import SchemaDisplay from '../schema-display/schema-display.component';
 
 interface ImporterProps {
   onResumeSet(resume: Resume): void;
@@ -49,6 +50,7 @@ const Importer: React.FC<ImporterProps> = ({ onResumeSet }: ImporterProps) => {
 
   return (
     <div>
+      <SchemaDisplay></SchemaDisplay>
       {validationResults &&   
       !validationResults?.isValid && 
       validationResults?.errorType !== ValidationErrorTypes.None &&
