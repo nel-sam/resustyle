@@ -5,6 +5,6 @@
   "enterJson": "Ingrese su CV en formato JSON",
   "experience": "Trabajos",
   "json-schema": "Formato del JSON del CV",
-  "view-schema-button": "Mirar formato del JSON",
-  "hide-schema-button": "Ocultar formato del JSON"
+  "view-schema-button": "Mirar formato JSON",
+  "hide-schema-button": "Ocultar formato JSON"
 }

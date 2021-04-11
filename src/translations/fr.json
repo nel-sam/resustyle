@@ -5,6 +5,6 @@
   "enterJson": "Ecrivéz votre résumé en JSON",
   "experience": "Expérience",
   "json-schema": "Le format de JSON de résumé",
-  "view-schema-button": "Voir format de JSON de résumé",
-  "hide-schema-button": "Cacher format de JSON de résumé"
+  "view-schema-button": "Voir format JSON de résumé",
+  "hide-schema-button": "Cacher format JSON de résumé"
 }
