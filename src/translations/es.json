@@ -6,5 +6,7 @@
   "experience": "Trabajos",
   "json-schema": "Formato del JSON del CV",
   "view-schema-button": "Mostrar formato JSON",
-  "hide-schema-button": "Ocultar formato JSON"
+  "hide-schema-button": "Ocultar formato JSON",
+  "missing-required-property": "Falta una propiedad requerida",
+  "unexpected-property-found": "Se encontró una propiedad inesperada"
 }
