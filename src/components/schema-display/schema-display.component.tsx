@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Panel, DefaultButton, PanelType } from '@fluentui/react';
 import { useTranslation } from 'react-i18next';
 import Clipboard from 'react-clipboard.js';
+import './schema-display.scss';
 
 const resumeSchema = `
 {
@@ -118,9 +119,7 @@ const SchemaDisplay: React.FC = () => {
           onDismiss={() => setIsSchemaVisible(!isSchemaVisible)}
           onOuterClick={() => setIsSchemaVisible(!isSchemaVisible)} 
         >
-          <Clipboard className="clipboard" data-clipboard-text={resumeSchema}>
-            Copy
-          </Clipboard>
+          <Clipboard className="clipboard" data-clipboard-text={resumeSchema}></Clipboard>
           <pre>{resumeSchema}</pre>
         </Panel>
       }
