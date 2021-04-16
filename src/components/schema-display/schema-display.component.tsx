@@ -119,7 +119,7 @@ const SchemaDisplay: React.FC = () => {
           onDismiss={() => setIsSchemaVisible(!isSchemaVisible)}
           onOuterClick={() => setIsSchemaVisible(!isSchemaVisible)} 
         >
-          <Clipboard className="clipboard" data-clipboard-text={resumeSchema}></Clipboard>
+          <Clipboard aria-label="Copy" title="Copy" className="clipboard" data-clipboard-text={resumeSchema}></Clipboard>
           <pre>{resumeSchema}</pre>
         </Panel>
       }
