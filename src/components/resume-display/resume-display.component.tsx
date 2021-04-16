@@ -13,7 +13,7 @@ const ResumeDisplay: React.FC<ResumeDisplayProps> = ({ resume }: ResumeDisplayPr
     <div className="resume-display-main">
       { resume &&
         (<>
-            <FontIcon aria-label="Print" iconName="Print" className="print-button" onClick={() => window.print()}/>
+            <FontIcon aria-label="Print" title="Print" iconName="Print" className="print-button" onClick={() => window.print()}/>
             <div className="resume-template">
               <ModernCorp resume={resume}></ModernCorp>
             </div>
