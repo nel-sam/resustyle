@@ -11,9 +11,12 @@ const ResumeDisplay: React.FC<ResumeDisplayProps> = ({ resume }: ResumeDisplayPr
   return (
     <div className="resume-display-main">
       { resume &&
-        (<div className="resume-template">
-          <ModernCorp resume={resume}></ModernCorp>
-        </div>)
+        (<>
+          <button className="print-button" arial-label="Print" title="Print" onClick={() => window.print()}></button>
+            <div className="resume-template">
+              <ModernCorp resume={resume}></ModernCorp>
+            </div>
+        </>)
       }
     </div>);
 };
