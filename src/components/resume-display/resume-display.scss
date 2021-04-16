@@ -1,15 +1,10 @@
 .print-button {
-    width: 25px;
-    height: 25px;
-    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTYgMThoLTh2LTFoOHYxem0tMiAxaC02djFoNnYtMXptMTAtMTR2MTNoLTR2NmgtMTZ2LTZoLTR2LTEzaDR2LTVoMTZ2NWg0em0tMTggMGgxMnYtM2gtMTJ2M3ptMTIgMTBoLTEydjdoMTJ2LTd6bTQtOGgtMjB2OWgydi0zaDE2djNoMnYtOXptLTEuNSAxYy0uMjc2IDAtLjUuMjI0LS41LjVzLjIyNC41LjUuNS41LS4yMjQuNS0uNS0uMjI0LS41LS41LS41eiIvPjwvc3ZnPg==');
-    background-size: 25px 25px;
-    border: none;
+    width: 1.5rem;
+    height: 1.5rem;
     outline: 0;
     cursor: pointer;
     display: block;
-    transform-origin: left top;
-    margin: 0.5rem;
-    vertical-align: top;
+    font-size: 1.3rem;
 }
 
 .print-button:active {
