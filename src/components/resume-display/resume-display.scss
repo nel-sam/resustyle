@@ -1,13 +1,17 @@
-.print-button {
-    width: 1.5rem;
-    height: 1.5rem;
-    outline: 0;
-    cursor: pointer;
-    display: block;
-    font-size: 1.3rem;
-}
+.resume-display-main {
+    width: fit-content;
 
-.print-button:active {
-    filter: invert(50%);
-    transform: translateY(0.05rem);
+    .print-button {
+        width: 1.5rem;
+        height: 1.5rem;
+        outline: 0;
+        cursor: pointer;
+        display: block;
+        font-size: 1.3rem;
+    }
+
+    .print-button:active {
+        filter: invert(50%);
+        transform: translateY(0.05rem);
+    }
 }
