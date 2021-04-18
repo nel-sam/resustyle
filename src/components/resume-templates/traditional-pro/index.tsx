@@ -9,7 +9,7 @@ const TraditionalPro: React.FC<ResumeTemplateProps> = ({ resume }: ResumeTemplat
       <span className="tp-name">
         {resume.basics.name}
       </span>
-      <HorizontalLine></HorizontalLine>
+      <HorizontalLine thicknessPx={2}></HorizontalLine>
       <section className="tp-contact">
         <div className="tp-address">
           <span>{resume.basics.location.address}</span>

@@ -1,4 +1,8 @@
-.hl-full {
-  border-bottom: 2px solid black;
-  width: 100%;
+.hl-parent {
+  padding: 1.5rem;
+  align-content: center;
+
+  .hl-child {
+    border-style: solid;
+  }
 }
