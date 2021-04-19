@@ -140,7 +140,7 @@ export const validJsonResume = `{
     "summary": "Description..."
   }],
   "skills": [{
-    "name": "Web Development",
+    "name": "Front-end Development",
     "level": "Master",
     "keywords": [
       "HTML",
@@ -150,6 +150,18 @@ export const validJsonResume = `{
       "Angular",
       "Accessibility",
       "UI/UX"
+    ]
+  },{
+    "name": "Back-end Development",
+    "level": "Master",
+    "keywords": [
+      "C#",
+      "REST API",
+      "GraphQL API",
+      "SQL Server",
+      "Java",
+      "RabbitMQ",
+      "AWS"
     ]
   }],
   "languages": [{

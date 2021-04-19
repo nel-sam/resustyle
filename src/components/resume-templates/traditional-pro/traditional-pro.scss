@@ -1,8 +1,76 @@
 .tp-main {
+  font-family: Baskerville;
+  padding: 0 3.5rem;
   padding-top: 1rem;
-  
+
+  h2, h3 {
+    margin: 0;
+    margin-top: 1.2rem;
+    padding: 0;
+  }
+
   .tp-name {
     font-size: 2rem;
     font-weight: bolder;
+  }
+
+  .tp-contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .tp-address, .tp-social-links, .tp-phone-email {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    .tp-phone-icon {
+      margin-right: 0.25rem;
+    }
+  }
+
+  .tp-title {
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+    font-size: 2rem;
+  }
+
+  .tp-summary {
+    align-content: center;
+    display: grid;
+    padding: 0 1rem;
+
+    .tp-summary-inner {
+      font-weight: bold;
+      padding: 1rem 4rem;
+      background-color: lightgray;
+      width: auto;
+      margin: auto;
+    }
+  }
+
+  .tp-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .tp-skill-item {
+
+    }
+  }
+
+  .tp-job {
+    margin: 1rem;
+    text-align: start;
+
+    .tp-job-section {
+      margin-bottom: 3rem;
+
+      .tp-position-company {
+        font-weight: bold;
+      }
+
+      .tp-date {
+      }
+    }
   }
 }

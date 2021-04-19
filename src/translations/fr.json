@@ -8,5 +8,6 @@
   "view-schema-button": "Voir format JSON de résumé",
   "hide-schema-button": "Cacher format JSON de résumé",
   "missing-required-property": "Il faut un object requiré",
-  "unexpected-property-found": "Il y a un objet non supporté"
+  "unexpected-property-found": "Il y a un objet non supporté",
+  "skills": "Compétences"
 }

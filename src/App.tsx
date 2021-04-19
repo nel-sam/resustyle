@@ -10,7 +10,6 @@ import { faLanguage } from '@fortawesome/free-solid-svg-icons';
 import translationsEn from './translations/en.json';
 import translationsEs from './translations/es.json';
 import translationsFr from './translations/fr.json';
-import translationsJp from './translations/jp.json';
 
 i18n
   .use(initReactI18next)
@@ -19,7 +18,6 @@ i18n
       en: { translation: translationsEn },
       es: { translation: translationsEs },
       fr: { translation: translationsFr },
-      jp: { translation: translationsJp },
     },
     lng: translationsEn.key,
     fallbackLng: translationsEs.key,
@@ -41,7 +39,6 @@ const App: React.FC = () => {
     { key: translationsEn.key, text: translationsEn.langName },
     { key: translationsEs.key, text: translationsEs.langName },
     { key: translationsFr.key, text: translationsFr.langName },
-    { key: translationsJp.key, text: translationsJp.langName },
   ];
 
   return (
