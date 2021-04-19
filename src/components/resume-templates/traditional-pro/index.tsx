@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneSquare } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
 import TraditionalProWork from './traditional-pro-work';
+import TraditionalProEducation from './traditional-pro-education';
 
 const TraditionalPro: React.FC<ResumeTemplateProps> = ({ resume }: ResumeTemplateProps) => {
   const { t } = useTranslation();
@@ -62,9 +63,17 @@ const TraditionalPro: React.FC<ResumeTemplateProps> = ({ resume }: ResumeTemplat
 
       <h3>{t('volunteer')}</h3>
       <HorizontalLine></HorizontalLine>
+      <section className="tp-volunteer">
+        {resume.volunteer.map(s =>
+          <span className="tp-volunteer-item" key={s.organization}>
+            <strong>{s.organization}</strong>: {s.summary}
+          </span>)
+        }
+      </section>
 
       <h3>{t('education')}</h3>
       <HorizontalLine></HorizontalLine>
+      <TraditionalProEducation educationItems={resume.education}></TraditionalProEducation>
 
     </div>
   );

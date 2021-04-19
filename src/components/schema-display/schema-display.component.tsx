@@ -112,6 +112,16 @@ const resumeSchema = `
       ]
     }],
   "volunteer": [{
+    "organization": "Meals on Wheels",
+    "position": "QA tester",
+    "website": "http://organization.com/",
+    "startDate": "2012-01-01",
+    "endDate": "2013-01-01",
+    "summary": "As part of a hackaton, I tested the program that my team made for Meals on Wheels.",
+    "highlights": [
+      "Awarded 'Volunteer of the Month'"
+    ]
+  },{
     "organization": "Organization",
     "position": "Volunteer",
     "website": "http://organization.com/",
@@ -123,7 +133,7 @@ const resumeSchema = `
     ]
   }],
   "education": [{
-    "institution": "University",
+    "institution": "University of Alaskifornia",
     "area": "Software Development",
     "studyType": "Bachelor",
     "startDate": "2011-01-01",

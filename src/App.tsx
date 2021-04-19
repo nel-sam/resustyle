@@ -45,7 +45,7 @@ const App: React.FC = () => {
     <Suspense fallback="Loading...">
       <div className="App">
         <header className="App-header">
-          <h1>{t('welcome')}</h1>
+          <h1 className="app-title">{t('welcome')}</h1>
           <div className="lang-select">
             <FontAwesomeIcon className="lang-icon" icon={faLanguage} />
             <ComboBox
