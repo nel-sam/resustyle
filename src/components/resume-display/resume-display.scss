@@ -1,17 +1,10 @@
 .resume-display-main {
-    width: fit-content;
+    width: 60rem;
 
-    .print-button {
-        width: 1.5rem;
-        height: 1.5rem;
-        outline: 0;
-        cursor: pointer;
-        display: block;
-        font-size: 1.3rem;
-    }
-
-    .print-button:active {
-        filter: invert(50%);
-        transform: translateY(0.05rem);
+    .resume-display-nav {
+        width: 24rem;
+        margin-bottom: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }

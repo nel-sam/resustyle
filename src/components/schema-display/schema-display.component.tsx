@@ -3,6 +3,7 @@ import { Panel, DefaultButton, PanelType } from '@fluentui/react';
 import { useTranslation } from 'react-i18next';
 import Clipboard from 'react-clipboard.js';
 import './schema-display.scss';
+import { btnStyles } from '../resume-templates/shared/styles';
 
 const resumeSchema = `
 {
@@ -201,6 +202,7 @@ const SchemaDisplay: React.FC = () => {
   return (
     <div>
       <DefaultButton
+        styles={btnStyles}
         onClick={() => setIsSchemaVisible(!isSchemaVisible)}
         text={isSchemaVisible ? t('hide-schema-button') : t('view-schema-button')} />
       {isSchemaVisible &&
@@ -214,7 +216,9 @@ const SchemaDisplay: React.FC = () => {
           onDismiss={() => setIsSchemaVisible(!isSchemaVisible)}
           onOuterClick={() => setIsSchemaVisible(!isSchemaVisible)}
         >
-          <Clipboard aria-label="Copy" title="Copy" className="clipboard" data-clipboard-text={resumeSchema}></Clipboard>
+          <DefaultButton styles={btnStyles}>
+            <Clipboard aria-label="Copy" title="Copy" className="clipboard" data-clipboard-text={resumeSchema}></Clipboard>
+          </DefaultButton>
           <pre>{resumeSchema}</pre>
         </Panel>
       }

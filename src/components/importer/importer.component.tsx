@@ -26,7 +26,7 @@ const Importer: React.FC<ImporterProps> = ({ onResumeSet }: ImporterProps) => {
     const parseResult = resumeService.parseResume(newValue);
 
     if (!parseResult.validationResult.isValid) {
-      setValidationResults(parseResult.validationResult); 
+      setValidationResults(parseResult.validationResult);
       return;
     }
 
@@ -38,11 +38,11 @@ const Importer: React.FC<ImporterProps> = ({ onResumeSet }: ImporterProps) => {
   };
 
   const getValidationErrorMessage = (valRes: ResumeValidationResult): string => {
-    if(valRes.errorType === ValidationErrorTypes.MissingRequiredProperty) {
+    if (valRes.errorType === ValidationErrorTypes.MissingRequiredProperty) {
       return `${t('missing-required-property')}: ${valRes.errorDetails}`;
     }
-    
-    if(valRes.errorType === ValidationErrorTypes.UnexpectedPropertyFound) {
+
+    if (valRes.errorType === ValidationErrorTypes.UnexpectedPropertyFound) {
       return `${t('unexpected-property-found')}: ${valRes.errorDetails}`;
     }
     return '';
@@ -51,21 +51,21 @@ const Importer: React.FC<ImporterProps> = ({ onResumeSet }: ImporterProps) => {
   return (
     <div>
       <SchemaDisplay></SchemaDisplay>
-      {validationResults &&   
-      !validationResults?.isValid && 
-      validationResults?.errorType !== ValidationErrorTypes.None &&
-        <MessageBar 
+      {validationResults &&
+        !validationResults?.isValid &&
+        validationResults?.errorType !== ValidationErrorTypes.None &&
+        <MessageBar
           className="err"
           messageBarType={MessageBarType.error}
           isMultiline={false}
           dismissButtonAriaLabel="Close"
           onDismiss={onDismiss}
         >
-         {getValidationErrorMessage(validationResults)}
+          {getValidationErrorMessage(validationResults)}
         </MessageBar>}
       <TextField
         label={t('enterJson')}
-        multiline rows={20}
+        multiline rows={32}
         placeholder="{}"
         onChange={onJsonEntry}
       />
