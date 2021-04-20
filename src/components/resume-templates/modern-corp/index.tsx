@@ -1,15 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Resume } from '../../../models/interfaces';
+import { Resume, ResumeTemplateProps } from '../../../models/interfaces';
 import CircleImage from '../shared/circle-image/circle-image.component';
 import ModernCorpWork from './work/modern-corp-work.component';
 import './modern-corp.scss';
 
-type ModernCorpProps = {
-  resume: Resume
-};
-
-const ModernCorp: React.FC<ModernCorpProps> = ({ resume }: ModernCorpProps) => {
+const ModernCorp: React.FC<ResumeTemplateProps> = ({ resume }: ResumeTemplateProps) => {
   const { t } = useTranslation();
 
   return (<div className='modern-corp-main'>

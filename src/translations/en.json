@@ -4,9 +4,12 @@
   "welcome": "Resustyle",
   "enterJson": "Enter resume JSON",
   "experience": "Experience",
+  "volunteer": "Volunteer",
+  "education": "Education",
   "json-schema": "Resume JSON Schema",
   "view-schema-button": "View JSON Schema",
   "hide-schema-button": "Hide JSON Schema",
   "missing-required-property": "Missing required property",
-  "unexpected-property-found": "Unexpected property found"
+  "unexpected-property-found": "Unexpected property found",
+  "skills": "Skills"
 }

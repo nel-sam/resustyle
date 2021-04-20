@@ -1,5 +1,9 @@
 import { ValidationErrorTypes } from '../enums';
 
+export type ResumeTemplateProps = {
+  resume: Resume
+};
+
 export type Location = {
   address: string;
   postalCode: string;

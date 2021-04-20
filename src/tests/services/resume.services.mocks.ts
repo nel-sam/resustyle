@@ -8,9 +8,9 @@ export const validJsonResume = `{
     "website": "https://nel-sam.github.io/portfolio/",
     "summary": "Over 10 years as a .Net/C# and 2+ years as an Angular (TypeScript) and React (JavaScript and TypeScript) developer. A believer in the term full-stack. Passionate about UI/UX. Experienced in Customer Service, Scrum, Visual Studio, VS Code, DevOps, Git, Rest APIs, test automation, Azure cloud, and .Net Core. Programmer as a profession and as a hobby. Mobile development experience.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Phoenix",
+      "address": "123 Joe St #321",
+      "postalCode": "90909",
+      "city": "Radville, GA",
       "countryCode": "US",
       "region": "South West"
     },
@@ -140,7 +140,7 @@ export const validJsonResume = `{
     "summary": "Description..."
   }],
   "skills": [{
-    "name": "Web Development",
+    "name": "Front-end Development",
     "level": "Master",
     "keywords": [
       "HTML",
@@ -150,6 +150,18 @@ export const validJsonResume = `{
       "Angular",
       "Accessibility",
       "UI/UX"
+    ]
+  },{
+    "name": "Back-end Development",
+    "level": "Master",
+    "keywords": [
+      "C#",
+      "REST API",
+      "GraphQL API",
+      "SQL Server",
+      "Java",
+      "RabbitMQ",
+      "AWS"
     ]
   }],
   "languages": [{

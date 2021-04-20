@@ -4,10 +4,15 @@
 }
 
 .App-header {
-  min-height: 10rem;
+  background-color: lightskyblue;
   display: grid;
   grid-template-columns: 5fr 2fr;
   grid-gap: 0.75rem 1rem;
+  padding: 1rem;
+
+  .app-title {
+    text-align: left;
+  }
 
   .lang-select {
     display: grid;
@@ -21,7 +26,11 @@
 }
 
 .resume-template {
-  transform: scale(0.6);
+  transform: scale(0.4);
+  padding: 25mm;
+  width: 60rem;
+  height: 80rem;
+  overflow: scroll;
   transform-origin: left top;
   border: 1px dashed grey;
 }
@@ -35,7 +44,9 @@
 
   .resume-template {
     transform: scale(1);
+    -webkit-print-color-adjust: exact;
     border: 0px;
+    height: auto;
   }
 
   .resume-display-main * {
