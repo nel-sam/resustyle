@@ -4,12 +4,17 @@
   "welcome": "Resustyle",
   "enterJson": "Enter resume JSON",
   "experience": "Experience",
-  "volunteer": "Volunteer",
   "education": "Education",
+  "awards": "Awards",
+  "volunteer": "Volunteer",
+  "publications": "Publications",
+  "References": "References", 
+  "interests": "INTERESTS",
+  "contact": "CONTACT",
+  "skills": "SKILLS",
   "json-schema": "Resume JSON Schema",
   "view-schema-button": "View JSON Schema",
   "hide-schema-button": "Hide JSON Schema",
   "missing-required-property": "Missing required property",
-  "unexpected-property-found": "Unexpected property found",
-  "skills": "Skills"
+  "unexpected-property-found": "Unexpected property found"
 }

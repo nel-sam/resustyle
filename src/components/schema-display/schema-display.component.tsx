@@ -8,24 +8,24 @@ import { btnStyles } from '../resume-templates/shared/styles';
 const resumeSchema = `
 {
   "basics": {
-    "name": "John Doe",
-    "label": "Junior Software QA Tester",
-    "picture": "",
-    "email": "john@gmail.com",
-    "phone": "(912) 555-4321",
-    "website": "http://johndoe.com",
-    "summary": "Tests execution, test analysis and reporting analysis of executed tests and reporting of results , preparing status reports daily, weekly, monthly reports . Involve in Carrying out manual testing, reporting bugs, and analyzed bugs, troubleshooting and responsible to keep track of them.",
+    "name": "Nelson Samayoa",
+    "label": "Software Developer",
+    "picture": "https://i0.wp.com/www.theresaglennphotography.com/wp-content/uploads/2018/09/022.jpg",
+    "email": "xxx@xxx.com",
+    "phone": "555.555.55555",
+    "website": "https://nel-sam.github.io/portfolio/",
+    "summary": "Over 10 years as a .Net/C# and 2+ years as an Angular (TypeScript) and React (JavaScript and TypeScript) developer. A believer in the term full-stack. Passionate about UI/UX. Experienced in Customer Service, Scrum, Visual Studio, VS Code, DevOps, Git, Rest APIs, test automation, Azure cloud, and .Net Core. Programmer as a profession and as a hobby. Mobile development experience.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "123 Joe St #321",
+      "postalCode": "90909",
+      "city": "Radville, GA",
       "countryCode": "US",
-      "region": "California"
+      "region": "South West"
     },
     "profiles": [{
       "network": "Twitter",
-      "username": "john",
-      "url": "http://twitter.com/john"
+      "username": "_nelsam_",
+      "url": "https://twitter.com/_nelsam_"
     }]
   },
   "work": [{
@@ -42,58 +42,6 @@ const resumeSchema = `
       "Created documentation that describes the architecture for a new system that uses the entire stack consisting of React for the web client, Angular Ionic for the Mobile client, a C#/.Net API, SQL Server, RabbitMQ, and AWS storage."
     ]
   },
-  {
-      "company": "DriveTime",
-      "position": "Software Developer",
-      "website": "https://www.drivetime.com/",
-      "startDate": "2018-05-01",
-      "endDate": "2020-02-28",
-      "summary": "C#, Angular 7 & 8, Ionic (mobile), REST API, WCF, GraphQL API development, Optimizely (experimentation), Azure Devops (VSTS), Azure Functions, and Message queues & Topics. Splunk & AppInsights for logging & analytics, Feature Flags, TypeScript/Javascript, GitHub/Git, Visual Studio, VS Code, SQL server, and Target Process for Scrum management. Debugging tools such as Fiddler, & Postman. I worked mainly on Microservice APIs and Angular web apps as a Full Stack dev for the various teams.",
-      "highlights": [
-        "Full-stack development on DriveTime.com , a nation-wide auto dealer and Bridgecrest.com",
-        "Introduced Angular Material components into an existing Angular project and set UI/UX, performance, and coding standards and practices.",
-        "Part of the dev team that created a public-facing GraphQL API (C#/.Net) for external consumption",
-        "Participated in architecture discussions and proposed, created a POC, and implemented the authentication model on our public API.",
-        "Migrated legacy product to use Azure Active Directory auth (OpenID Connect).",
-        "Architected and implemented Subscriber model solution for processing vehicle inventorying photos using Azure services such as server-less functions, service bus, queues, blob storage, and Azure AD.",
-        "Recreated a legacy app in Angular 8 as a side project (not on work time)",
-        "Architected and implemented system for vehicle value analysis using Azure.",
-        "Work on legacy jQuery and KnockoutJS apps when needed."
-      ]
-    },
-    {
-      "company": "iPro Tech",
-      "position": "Software Developer",
-      "website": "https://iprotech.com/",
-      "startDate": "2017-01-01",
-      "endDate": "2018-03-28",
-      "summary": "C#, Selenium, PowerShell, Azure Devops (VSTS), JavaScript. I lead the automated testing effort and developed in-house testing framework (C#) on top of Selenium and CodedUI.",
-      "highlights": [
-        "Awarded three times for work-ethic, and received two product certifications within first two months.",
-        "Created a Google Charting API Dashboard (JavaScript library) for dev teams to view test results related to their products. This page retrieved TFS data using the Team Services REST API.",
-        "Developed framework features such as in-house database logging (C# with Entity Framework), test result reporting, async multi-browser testing, and async test execution across multiple test agents.",
-        "Created multi-threaded WinForms utility (C#) to help the Support Team debug issues on customer environments.",
-        "Lead conversion of tests into SpecFlow BDD framework (Cucumber for .Net using MSTest) and White (free alternative to CodedUI), which made Automation efforts much cheaper for the company.",
-        "Created and managed my team’s Sprints (Agile/Scrum) using TFS and later Jira.",
-        "Handled DevOps functions with on-prem Microsoft Team Foundation Server (TFS & PowerShell scripting)."
-      ]
-    },
-  {
-      "company": "Dell",
-      "position": "Software Developer",
-      "website": "https://www.dell.com/",
-      "startDate": "2012-07-01",
-      "endDate": "2017-01-30",
-      "summary": "C#, Rest API, WCF, MVC with Razor, WinForms, MSSQL, ASP.Net, MVC, Entity framework, Rest API’s, Unity for Dependency Injection, WinForms, and integration with Active Directory & LDAP. Won the Dell Champion Award in 2015, which is given to valuable employees.",
-      "highlights": [
-        "Create a C# CLI utility used by support for capturing data from Windows, SQL, and Active Directory which was required when investigating customer issues. Created a WinForms reporting client used for viewing historic snapshot data of security policies using data from our RESTful API (hosted on IIS).",
-        "Took ownership of the Windows Service project (C#) that created security policy snapshots. I worked on fixing bugs and eventually trained customers on its codebase during the sunsetting phase.",
-        "Worked on various WinForms, Windows Services, ASP.NET Web Services, and Web App projects.",
-        "Lead the Automated test development team which included myself and 4 other developers using Azure and VSTS, which we used for Sprint (Agile/Scrum) planning and reporting team progress to managers.",
-        "Trained developers on developing with MS CodedUI, Selenium, API-based testing, load testing, load testing, and Security & Penetration testing.",
-        "Responsible for DevOps functions such as creation and maintenance of MSBuild servers, build/release definitions, and automated test environments for all Phoenix product teams. This includes on-prem TFS, Visual Studio Online (VSTS), PowerShell scripts, and integration with Azure Virtual Machines for automated testing."
-      ]
-    },
   {
       "company": "Intel",
       "position": "Software Developer",
@@ -113,16 +61,6 @@ const resumeSchema = `
       ]
     }],
   "volunteer": [{
-    "organization": "Meals on Wheels",
-    "position": "QA tester",
-    "website": "http://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "As part of a hackaton, I tested the program that my team made for Meals on Wheels.",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  },{
     "organization": "Organization",
     "position": "Volunteer",
     "website": "http://organization.com/",
@@ -134,14 +72,14 @@ const resumeSchema = `
     ]
   }],
   "education": [{
-    "institution": "University of Alaskifornia",
-    "area": "Software Development",
+    "institution": "Oregon State University",
+    "area": "Computer Science",
     "studyType": "Bachelor",
-    "startDate": "2011-01-01",
-    "endDate": "2013-01-01",
-    "gpa": "4.0",
+    "startDate": "2010-01-01",
+    "endDate": "2019-06-01",
+    "gpa": "3.6",
     "courses": [
-      "DB1101 - Basic SQL"
+      "これ는 dois être válido"
     ]
   }],
   "awards": [{
@@ -158,12 +96,16 @@ const resumeSchema = `
     "summary": "Description..."
   }],
   "skills": [{
-    "name": "Web Development",
+    "name": "Front-end Development",
     "level": "Master",
     "keywords": [
       "HTML",
       "CSS",
-      "Javascript"
+      "Javascript",
+      "React",
+      "Angular",
+      "Accessibility",
+      "UI/UX"
     ]
   },{
     "name": "Back-end Development",
@@ -181,12 +123,30 @@ const resumeSchema = `
   "languages": [{
     "language": "English",
     "fluency": "Native speaker"
+  }, {
+    "language": "Spanish",
+    "fluency": "Native speaker"
+  }, {
+    "language": "Japanese",
+    "fluency": "Advanced"
+  }, {
+    "language": "French",
+    "fluency": "Intermediate"
   }],
   "interests": [{
-    "name": "Wildlife",
+    "name": "Music production",
     "keywords": [
-      "Ferrets",
-      "Unicorns"
+      "Guitar",
+      "Synthesizer",
+      "Ableton"
+    ]
+  }, {
+    "name": "Foreign Languages",
+    "keywords": [
+      "Spanish",
+      "Japanese",
+      "Korean",
+      "American Sign Language (ASL)"
     ]
   }],
   "references": [{

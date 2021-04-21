@@ -10,6 +10,7 @@ type HorizontalLineProps = {
   width?: HorizontalLineWidths,
   color?: string,
   thicknessPx?: number;
+  style?: string;
 };
 
 const getWidth = (width: HorizontalLineWidths): string => {
@@ -24,12 +25,14 @@ const HorizontalLine: React.FC<HorizontalLineProps> =
   ({
     width = HorizontalLineWidths.full,
     color = 'black',
-    thicknessPx = 1
+    thicknessPx = 1,
+    style = 'solid'
   }: HorizontalLineProps) => {
     const styles = {
       borderColor: color,
       width: getWidth(width),
       borderWidth: `${thicknessPx}px`,
+      borderStyle: style
     };
 
     return (
