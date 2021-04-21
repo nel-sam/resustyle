@@ -2,11 +2,10 @@ import React from 'react';
 import './traditional-pro.scss';
 import { ResumeTemplateProps } from '../../../models/interfaces';
 import HorizontalLine from '../shared/horizontal-line';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhoneSquare } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
 import TraditionalProWork from './traditional-pro-work';
 import TraditionalProEducation from './traditional-pro-education';
+import { FontIcon } from '@fluentui/react';
 
 const TraditionalPro: React.FC<ResumeTemplateProps> = ({ resume }: ResumeTemplateProps) => {
   const { t } = useTranslation();
@@ -34,7 +33,7 @@ const TraditionalPro: React.FC<ResumeTemplateProps> = ({ resume }: ResumeTemplat
         </div>
         <div className="tp-phone-email">
           <span>
-            <FontAwesomeIcon className="tp-phone-icon" icon={faPhoneSquare}></FontAwesomeIcon>
+            <FontIcon className="tp-phone-icon" aria-label="Phone icon" title="Phone" iconName="Phone" />
             {resume.basics.phone}
           </span>
           <span>{resume.basics.email}</span>

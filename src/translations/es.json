@@ -3,11 +3,18 @@
   "langName": "Español",
   "welcome": "Resustyle",
   "enterJson": "Ingrese su CV en formato JSON",
-  "experience": "Trabajos",
-  "json-schema": "Formato del JSON del CV",
+  "experience": "Experiencia Laboral",
+  "education": "Formación Academica",
+  "awards": "Premios",
+  "volunteer": "Actividades Extra Curriculares",
+  "publications": "Publicaciones",
+  "references": "Referencias", 
+  "interests": "INTERESES PERSONALES",
+  "contact": "CONTACTO",
+  "skills": "HABILIDADES",
+  "json-schema": "Formato JSON del CV",
   "view-schema-button": "Mostrar formato JSON",
   "hide-schema-button": "Ocultar formato JSON",
   "missing-required-property": "Falta una propiedad requerida",
-  "unexpected-property-found": "Se encontró una propiedad inesperada",
-  "skills": "Habilidades"
+  "unexpected-property-found": "Se encontró una propiedad inesperada"
 }

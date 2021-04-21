@@ -10,6 +10,7 @@ type ModernCorpWorkProps = {
 const ModernCorpWork: React.FC<ModernCorpWorkProps> = ({ jobs, headerText }: ModernCorpWorkProps) => {
   return (
     <div className="modern-corp-work">
+      <div className="block"></div>
       <span className="header">{headerText}</span>
 
       <section className="job">
@@ -19,21 +20,21 @@ const ModernCorpWork: React.FC<ModernCorpWorkProps> = ({ jobs, headerText }: Mod
           const endDate = (new Date(job.endDate)).toLocaleDateString();
 
           return (
-            <div key={`${job.company}${job.startDate}`}>
-              <div className="date-location">
-                <span className="date">{startDate} - {endDate}</span>
-                {/* <span className="location">{job.location}</span> */}
-              </div>
-              <span className="position">{job.position}</span>
-              <div>
-                <span className="company">{job.company}</span>
-                <span className="company-url">{job.website}</span>
-              </div>
-              <span className="summary">{job.summary}</span>
-              <ul>
-                {job.highlights?.map(h => (<li key={h}>{h}</li>))}
-              </ul>
-            </div>);
+              <div className="jobs" key={`${job.company}${job.startDate}`}>
+                <div className="date-location">
+                  <span className="date">{startDate} - {endDate}</span>
+                </div>
+                <span className="position">{job.position}</span>
+                <div>
+                  <span className="company">{job.company}</span>
+                  <span className="company-url">{job.website}</span>
+                </div>
+                <span className="summary">{job.summary}</span>
+                <ul>
+                  {job.highlights?.map(h => (<li key={h}>{h}</li>))}
+                </ul>
+            </div>
+            );
         })}
       </section>
     </div>);
