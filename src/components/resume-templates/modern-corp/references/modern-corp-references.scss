@@ -1,4 +1,4 @@
-.modern-corp-work {
+.modern-corp-school {
   margin: 1rem;
   text-align: left;
 
@@ -14,25 +14,16 @@
     text-transform: uppercase;
   }
 
-  .job {
+  .reference {
     margin: 1rem;
 
-    .jobs{
+    .references {
       border-bottom: 1px dashed gray;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
     }
 
-    .jobs:last-child{
+    .references:last-child {
       border: none;
-    }
-
-    .position {
-      font-weight: bold;
-    }
-    .company {
-      display: block;
-      color: rgb(152, 63, 93);
-      font-size: 1rem;
     }
 
     .date {

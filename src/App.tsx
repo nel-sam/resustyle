@@ -4,8 +4,7 @@ import i18n from 'i18next';
 import { initReactI18next, useTranslation } from 'react-i18next';
 import { ComboBox, IComboBox, IComboBoxOption, initializeIcons } from '@fluentui/react';
 import MainContainer from './components/main-container/main-container.component';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLanguage } from '@fortawesome/free-solid-svg-icons';
+import { FontIcon } from '@fluentui/react/lib/Icon';
 
 import translationsEn from './translations/en.json';
 import translationsEs from './translations/es.json';
@@ -47,7 +46,7 @@ const App: React.FC = () => {
         <header className="App-header">
           <h1 className="app-title">{t('welcome')}</h1>
           <div className="lang-select">
-            <FontAwesomeIcon className="lang-icon" icon={faLanguage} />
+            <FontIcon className="lang-icon" aria-label="Language icon" title="Language" iconName="LocaleLanguage"/>
             <ComboBox
               componentRef={comboBoxRef}
               defaultSelectedKey="en"

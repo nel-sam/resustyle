@@ -45,7 +45,6 @@ const ResumeDisplay: React.FC<ResumeDisplayProps> = ({ resume }: ResumeDisplayPr
           <div className="resume-template">
             {activeIndex === 0 && <ModernCorp resume={resume}></ModernCorp>}
             {activeIndex === 1 && <TraditionalPro resume={resume}></TraditionalPro>}
-
           </div>
         </>)
       }
