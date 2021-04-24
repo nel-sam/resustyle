@@ -8,7 +8,7 @@
   "awards": "Awards",
   "volunteer": "Volunteer",
   "publications": "Publications",
-  "References": "References", 
+  "References": "References",
   "interests": "INTERESTS",
   "contact": "CONTACT",
   "skills": "SKILLS",
@@ -16,5 +16,6 @@
   "view-schema-button": "View JSON Schema",
   "hide-schema-button": "Hide JSON Schema",
   "missing-required-property": "Missing required property",
-  "unexpected-property-found": "Unexpected property found"
+  "unexpected-property-found": "Unexpected property found",
+  "instructions": "Enter your resume in JSON format in the box."
 }

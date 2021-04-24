@@ -8,7 +8,7 @@ import { btnStyles } from '../resume-templates/shared/styles';
 const resumeSchema = `
 {
   "basics": {
-    "name": "Nelson Samayoa",
+    "name": "John Velazquez",
     "label": "Software Developer",
     "picture": "https://i0.wp.com/www.theresaglennphotography.com/wp-content/uploads/2018/09/022.jpg",
     "email": "xxx@xxx.com",
