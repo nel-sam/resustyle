@@ -6,12 +6,16 @@ import { FontIcon } from '@fluentui/react/lib/Icon';
 import TraditionalPro from '../resume-templates/traditional-pro';
 import { DefaultButton } from '@fluentui/react';
 import { btnStyles } from '../resume-templates/shared/styles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 type ResumeDisplayProps = {
   resume: Resume | undefined;
 }
 
 const ResumeDisplay: React.FC<ResumeDisplayProps> = ({ resume }: ResumeDisplayProps) => {
+  const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState<number>(0);
   // Increase this if a new template is added
   const templateMaxIndex = 1;
@@ -26,9 +30,9 @@ const ResumeDisplay: React.FC<ResumeDisplayProps> = ({ resume }: ResumeDisplayPr
   };
 
   return (
-    <div className="resume-display-main">
-      { resume &&
-        (<>
+    <>
+      { resume ?
+        (<div className="resume-display-main" >
           <nav className="resume-display-nav">
             <DefaultButton aria-label="Previous resume template" styles={btnStyles} onClick={() => onPrevious()}>
               <FontIcon title="Previous" iconName="DoubleChevronLeft8"></FontIcon>
@@ -46,9 +50,21 @@ const ResumeDisplay: React.FC<ResumeDisplayProps> = ({ resume }: ResumeDisplayPr
             {activeIndex === 0 && <ModernCorp resume={resume}></ModernCorp>}
             {activeIndex === 1 && <TraditionalPro resume={resume}></TraditionalPro>}
           </div>
-        </>)
+        </div >)
+        :
+        (<div className="resume-display-zero-state">
+          <div className="left">
+            <FontAwesomeIcon className="arrow" icon={faArrowLeft}></FontAwesomeIcon>
+            <FontAwesomeIcon className="arrow" icon={faArrowLeft}></FontAwesomeIcon>
+            <FontAwesomeIcon className="arrow" icon={faArrowLeft}></FontAwesomeIcon>
+          </div>
+          <div className="right">
+            <span className="instructions">{t('instructions')}</span>
+          </div>
+        </div>)
       }
-    </div>);
+    </>
+  );
 };
 
 export default ResumeDisplay;

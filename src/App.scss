@@ -1,9 +1,11 @@
+@import './theme/colors.scss';
+
 .App {
   text-align: center;
 }
 
 .App-header {
-  background-color: #269ccc;
+  background-color: $primary;
   color: #f5f5f5;
   display: grid;
   grid-template-columns: 5fr 2fr;

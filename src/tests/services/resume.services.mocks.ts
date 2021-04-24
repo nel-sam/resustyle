@@ -1,6 +1,6 @@
 export const validJsonResume = `{
   "basics": {
-    "name": "Nelson Samayoa",
+    "name": "John Velazquez",
     "label": "Software Developer",
     "picture": "https://nel-sam.github.io/portfolio/images/circle.jpg",
     "email": "xxx@xxx.com",
