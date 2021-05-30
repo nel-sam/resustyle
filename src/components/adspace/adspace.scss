@@ -1,5 +1,7 @@
+@import './../../theme/colors.scss';
+
 .adspace {
-  height: 100%;
-  background-color: grey;
-  color: white;
+  max-height: 8rem;
+  padding: 0.5rem;
+  background-color: white;
 }

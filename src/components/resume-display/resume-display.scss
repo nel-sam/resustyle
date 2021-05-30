@@ -2,6 +2,7 @@
 
 .resume-display-main {
   width: 60rem;
+  background: $bgGray;
 
   .resume-display-nav {
     width: 24rem;
@@ -12,45 +13,13 @@
 }
 
 .resume-display-zero-state {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+  background: $bgGray;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 
-  .left {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    height: 100%;
-
-    .arrow {
-      height: 100%;
-      font-size: 2.5rem;
-      color: $primary;
-      animation: glow 2s infinite;
-    }
-  }
-
-  .right {
-    background: $primary;
-    height: 100%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    animation: glow 2s infinite;
-
-    .instructions {
-      margin: auto;
-      width: 75%;
-    }
-  }
-}
-
-@keyframes glow {
-  0% {
-    filter: drop-shadow(0 0 1px $shadow);
-  }
-  50% {
-    filter: drop-shadow(0 0 8px $shadow);
-  }
-  100% {
-    filter: drop-shadow(0 0 1px $shadow);
+  .instructions {
+    margin: auto;
+    width: 100%;
   }
 }

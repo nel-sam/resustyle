@@ -176,9 +176,7 @@ const SchemaDisplay: React.FC = () => {
           onDismiss={() => setIsSchemaVisible(!isSchemaVisible)}
           onOuterClick={() => setIsSchemaVisible(!isSchemaVisible)}
         >
-          <DefaultButton styles={btnStyles}>
-            <Clipboard aria-label="Copy" title="Copy" className="clipboard" data-clipboard-text={resumeSchema}></Clipboard>
-          </DefaultButton>
+          <Clipboard aria-label="Copy" title="Copy" className="clipboard" data-clipboard-text={resumeSchema}></Clipboard>
           <pre>{resumeSchema}</pre>
         </Panel>
       }

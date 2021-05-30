@@ -5,6 +5,7 @@ import { ValidationErrorTypes } from '../../enums';
 import { Resume, ResumeValidationResult } from '../../models/interfaces';
 import ResumeService from '../../services/resume.service';
 import SchemaDisplay from '../schema-display/schema-display.component';
+import './importer.component.scss';
 
 interface ImporterProps {
   onResumeSet(resume: Resume): void;
@@ -49,7 +50,7 @@ const Importer: React.FC<ImporterProps> = ({ onResumeSet }: ImporterProps) => {
   };
 
   return (
-    <div>
+    <div className="importer-main">
       <SchemaDisplay></SchemaDisplay>
       {validationResults &&
         !validationResults?.isValid &&

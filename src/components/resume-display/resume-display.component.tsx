@@ -6,8 +6,6 @@ import { FontIcon } from '@fluentui/react/lib/Icon';
 import TraditionalPro from '../resume-templates/traditional-pro';
 import { DefaultButton } from '@fluentui/react';
 import { btnStyles } from '../resume-templates/shared/styles';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
 
 type ResumeDisplayProps = {
@@ -53,14 +51,7 @@ const ResumeDisplay: React.FC<ResumeDisplayProps> = ({ resume }: ResumeDisplayPr
         </div >)
         :
         (<div className="resume-display-zero-state">
-          <div className="left">
-            <FontAwesomeIcon className="arrow" icon={faArrowLeft}></FontAwesomeIcon>
-            <FontAwesomeIcon className="arrow" icon={faArrowLeft}></FontAwesomeIcon>
-            <FontAwesomeIcon className="arrow" icon={faArrowLeft}></FontAwesomeIcon>
-          </div>
-          <div className="right">
-            <span className="instructions">{t('instructions')}</span>
-          </div>
+          <span className="instructions">{t('instructions')}</span>
         </div>)
       }
     </>

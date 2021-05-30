@@ -10,9 +10,13 @@ const Main: React.FC = () => {
 
   return (
     <main className="main-container">
-      <Importer onResumeSet={setResume}></Importer>
-      <ResumeDisplay resume={resume}></ResumeDisplay>
-      <AdSpace></AdSpace>
+      <div className="top">
+        <AdSpace></AdSpace>
+      </div>
+      <div className="bottom">
+        <Importer onResumeSet={setResume}></Importer>
+        <ResumeDisplay resume={resume}></ResumeDisplay>
+      </div>
     </main>
   );
 };

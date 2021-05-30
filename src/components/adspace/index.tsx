@@ -13,7 +13,7 @@ const AdSpace: React.FC = () => {
 
   return (
     <div className="adspace">
-      {lines(20)}
+      {lines(3)}
     </div>);
 };
 

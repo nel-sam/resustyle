@@ -44,9 +44,11 @@ const App: React.FC = () => {
     <Suspense fallback="Loading...">
       <div className="App">
         <header className="App-header">
-          <h1 className="app-title">{t('welcome')}</h1>
+          <h1 className="app-title">
+            ResuStyle
+          </h1>
           <div className="lang-select">
-            <FontIcon className="lang-icon" aria-label="Language icon" title="Language" iconName="LocaleLanguage"/>
+            <FontIcon className="lang-icon" aria-label="Language icon" title="Language" iconName="LocaleLanguage" />
             <ComboBox
               componentRef={comboBoxRef}
               defaultSelectedKey="en"
